@@ -41,7 +41,7 @@ export class ContactForm extends Component {
     }
 
     alert(`${name} is already in contact`);
-    this.resetNum();
+    this.resetName();
   };
 
   resetAll = () => {
@@ -51,9 +51,9 @@ export class ContactForm extends Component {
     });
   };
 
-  resetNum = () => {
+  resetName = () => {
     this.setState({
-      number: '',
+      name: '',
     });
   };
 
